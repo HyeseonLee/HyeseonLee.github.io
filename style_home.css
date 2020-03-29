@@ -13,8 +13,9 @@ html {
 
 body {
   font-family: "Vibur", cursive;
+  /* font-family: 'Comic Neue', cursive; */
   font-size: 1rem;
-  background-image: url("https://www.dropbox.com/s/2ct0i6kc61vp0bh/wall.jpg?raw=1");
+  background-image: url("home_wall.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,6 +23,7 @@ body {
 }
 
 .container{
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,6 +56,24 @@ body {
 @keyframes neon {
   from {
     text-shadow:
+    0 0 6px rgba(228, 202, 211, 0.92),
+    0 0 30px rgba(229, 165, 222, 0.34),
+    0 0 12px rgba(235, 50, 4, 0.52),
+    0 0 21px rgba(175, 54, 54, 0.92),
+    0 0 34px rgba(212, 93, 89, 0.76),
+    0 0 54px rgba(216, 126, 67, 0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(218, 202, 228, 0.98),
+    0 0 30px rgba(212, 185, 212, 0.42),
+    0 0 12px rgba(226, 57, 57, 0.58),
+    0 0 22px rgba(236, 30, 99, 0.84),
+    0 0 38px rgba(221, 58, 58, 0.88),
+    0 0 60px rgb(185, 47, 47);
+  }
+  /* from {
+    text-shadow:
     0 0 6px rgba(202,228,225,0.92),
     0 0 30px rgba(202,228,225,0.34),
     0 0 12px rgba(30,132,242,0.52),
@@ -69,19 +89,41 @@ body {
     0 0 22px rgba(30,132,242,0.84),
     0 0 38px rgba(30,132,242,0.88),
     0 0 60px rgba(30,132,242,1);
-  }
+  } */
 }
 
 /* profile picture */
 #img_profile{
     margin: 50px;
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     display: inline-block;
     border-radius: 50%;
     border: 2px solid black;
 }
 
+/* menu button */
+.menu-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  color: black;
+}
+.menu{
+  margin: 0 200px 50px 200px;
+  padding: 10px 45px;
+  font-family: 'Comic Neue', cursive;
+  font-size: 2rem;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.8;
+
+}
 /* Link */
 /*.link {
 	position: absolute;
