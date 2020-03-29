@@ -21,6 +21,13 @@ body {
   background-color: #141414;
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*-- Sign Styles --*/
 
@@ -65,10 +72,18 @@ body {
   }
 }
 
-
+/* profile picture */
+#img_profile{
+    margin: 50px;
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid black;
+}
 
 /* Link */
-.link {
+/*.link {
 	position: absolute;
 	bottom: 10px; left: 10px;
 	color: #828282;
@@ -85,3 +100,4 @@ a:focus, :hover {
     0 0 11px rgba(30,132,242,0.78),
     0 0 16px rgba(30,132,242,0.92);
 }
+*/
