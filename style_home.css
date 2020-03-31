@@ -63,7 +63,7 @@ body {
 /* animation */
 
 @keyframes neon {
-  from {
+  /* from {
     text-shadow:
     0 0 6px rgba(228, 202, 211, 0.92),
     0 0 30px rgba(229, 165, 222, 0.34),
@@ -80,8 +80,8 @@ body {
     0 0 22px rgba(236, 30, 99, 0.84),
     0 0 38px rgba(221, 58, 58, 0.88),
     0 0 60px rgb(185, 47, 47);
-  }
-  /* from {
+  } */
+  from {
     text-shadow:
     0 0 6px rgba(202,228,225,0.92),
     0 0 30px rgba(202,228,225,0.34),
@@ -98,14 +98,15 @@ body {
     0 0 22px rgba(30,132,242,0.84),
     0 0 38px rgba(30,132,242,0.88),
     0 0 60px rgba(30,132,242,1);
-  } */
+  }
 }
 
 /* profile picture */
 #img_profile{
-    margin: 50px;
-    width: 350px;
-    height: 350px;
+    margin: 50px 50px 80px 50px;
+
+    width: 380px;
+    height: 380px;
     display: inline-block;
     border-radius: 50%;
     border: 2px solid black;
@@ -120,22 +121,38 @@ body {
 
   color: black;
 }
-.menu{
+
+/* button */
+.button{
   margin: 0 200px 50px 200px;
   padding: 10px 45px;
   font-family: 'Comic Neue', cursive;
   /* font-family: "Vibur", cursive;
   /* font-family: 'Gugi', cursive; */
-
-  font-size: 1.8rem;
-
+  font-size: 2rem;
   width: 100%;
   height: 100%;
   border-radius: 30px;
   background-color: rgb(255, 255, 255);
   opacity: 0.6;
+  cursor: pointer;
+
+  box-shadow: 0px 5px 10px #484a4d;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 
 }
+button:hover {
+  box-shadow: 0px 15px 25px -5px  #484a4d;
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+button:active {
+  box-shadow: 0px 4px 4px  #484a4d;
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+}
+
 /* Link */
 /*.link {
 	position: absolute;
