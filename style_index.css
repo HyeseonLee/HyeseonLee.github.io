@@ -7,10 +7,6 @@ body {
   height: 100%;
 }
 
-html {
-  font-size: 16px;
-}
-
 body {
   /* font-family: "Vibur", cursive; */
   /* font-family: 'Lobster', cursive; */
@@ -24,7 +20,7 @@ body {
   /* font-family: 'Suez One', serif; */
 
   font-size: 1rem;
-  background-image: url("likelion.jpg");
+  background-image: url("index_wall.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
